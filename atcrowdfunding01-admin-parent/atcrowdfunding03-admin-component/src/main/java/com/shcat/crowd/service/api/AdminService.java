@@ -1,6 +1,9 @@
 package com.shcat.crowd.service.api;
 
+import com.github.pagehelper.PageInfo;
 import com.shcat.crowd.entity.Admin;
+
+import java.util.List;
 
 /**
  * @author shcat
@@ -9,4 +12,7 @@ import com.shcat.crowd.entity.Admin;
  */
 public interface AdminService {
     void saveAdmin(Admin admin);
+    List<Admin> getAll();
+
+    Admin getAdminById(Integer id);
 }

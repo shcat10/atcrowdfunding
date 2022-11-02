@@ -12,6 +12,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 // 这里用junit5进行测试
 @SpringJUnitConfig(locations = {"classpath:spring-persist-tx.xml", "classpath:spring-persist-mybatis.xml"})
@@ -44,4 +45,17 @@ public class CrowdTest {
         Admin admin = new Admin(null, "mei Lee", "123456", "mei", "mei@qq.com", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
         adminService.saveAdmin(admin);
     }
+
+    @Test
+    public void testGetAll(){
+        List<Admin> adminList = adminService.getAll();
+        System.out.println(adminList);
+    }
+
+    @Test
+    public void testById(){
+        Admin adminList = adminService.getAdminById(3);
+        System.out.println(adminList);
+    }
+
 }

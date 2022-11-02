@@ -1,0 +1,30 @@
+<component name="libraryTable">
+  <library name="JAX-WS-Glassfish / JAX-WS 2.2 RI / Metro 1.X / JWSDP 2.2" type="JAX-WS">
+    <properties version="Glassfish / JAX-WS 2.2 RI / Metro 1.X / JWSDP 2.2" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/javax.annotation.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/gmbal-api-only.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/jaxws-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/ha-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/jaxb-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/FastInoset.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/jaxb-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/jaxb-xjc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/jsr181-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/management-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/mimepull.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/policy.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/jaxws-tools.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/saaj-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/jaxws-rt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/stax-ex.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/streambuffer.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/stax2-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/woodstox-core-asl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/atcrowdfunding01-admin-parent/atcrowdfunding02-admin-webui/lib/saaj-impl.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
