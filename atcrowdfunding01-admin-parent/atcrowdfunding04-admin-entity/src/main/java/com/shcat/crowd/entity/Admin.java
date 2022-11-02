@@ -61,6 +61,9 @@ public class Admin {
         this.createTime = createTime == null ? null : createTime.trim();
     }
 
+    public Admin() {
+    }
+
     public Admin(Integer id, String login, String userPswd, String userName, String email, String createTime) {
         this.id = id;
         this.login = login;

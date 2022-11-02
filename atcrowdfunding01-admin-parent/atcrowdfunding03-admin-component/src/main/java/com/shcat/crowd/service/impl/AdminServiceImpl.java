@@ -1,10 +1,13 @@
 package com.shcat.crowd.service.impl;
 
 import com.shcat.crowd.entity.Admin;
+import com.shcat.crowd.entity.AdminExample;
 import com.shcat.crowd.mapper.AdminMapper;
 import com.shcat.crowd.service.api.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @author shcat
@@ -22,4 +25,16 @@ public class AdminServiceImpl implements AdminService {
         adminMapper.insert(admin);
         // throw new RuntimeException();
     }
+
+    @Override
+    public List<Admin> getAll() {
+        return adminMapper.selectByExample(new AdminExample());
+    }
+
+    @Override
+    public Admin getAdminById(Integer id) {
+        return adminMapper.selectByPrimaryKey(id);
+    }
+
+
 }
