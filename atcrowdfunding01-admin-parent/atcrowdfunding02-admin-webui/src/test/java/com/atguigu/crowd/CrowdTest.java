@@ -44,5 +44,4 @@ public class CrowdTest {
         Admin admin = new Admin(null, "mei Lee", "123456", "mei", "mei@qq.com", new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()));
         adminService.saveAdmin(admin);
     }
-
 }
