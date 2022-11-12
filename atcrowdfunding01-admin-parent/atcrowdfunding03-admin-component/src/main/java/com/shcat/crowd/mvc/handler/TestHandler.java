@@ -3,6 +3,7 @@ package com.shcat.crowd.mvc.handler;
 import com.shcat.crowd.entity.Admin;
 import com.shcat.crowd.entity.Student;
 import com.shcat.crowd.service.api.AdminService;
+import com.shcat.crowd.util.CrowdUtil;
 import com.shcat.crowd.util.ResultEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 /**
@@ -21,20 +23,11 @@ import java.util.List;
  * @description
  * @create 2022.11.2 17:10:53
  */
-@Controller
+//@Controller
 public class TestHandler {
 
     @Autowired
     private AdminService adminService;
-
-    @RequestMapping("/test/ssm.html")
-    public String testSSM(ModelMap modelMap){
-
-        List<Admin> adminList = adminService.getAll();
-        modelMap.addAttribute("adminList",adminList);
-
-        return "target";
-    }
 
     @ResponseBody
     @RequestMapping("/send/array1.do")
@@ -60,8 +53,25 @@ public class TestHandler {
 
     @ResponseBody
     @RequestMapping("/send/compose/object.do")
-    public ResultEntity<Student> testReceiveComplicatedObject(@RequestBody Student student){
+    public ResultEntity<Student> testReceiveComplicatedObject(@RequestBody Student student, HttpServletRequest request){
+
+        boolean judgeResult = CrowdUtil.judgeRequestType(request);
+        logger.info("judgeResult = "+judgeResult);
+
         logger.info(student.toString());
         return ResultEntity.successWithData(student);
     }
+
+    @RequestMapping("/test/ssm.html")
+    public String testSSM(ModelMap modelMap, HttpServletRequest request){
+
+        boolean judgeResult = CrowdUtil.judgeRequestType(request);
+        logger.info("judgeResult = "+judgeResult);
+
+        List<Admin> adminList = adminService.getAll();
+        modelMap.addAttribute("adminList",adminList);
+        return "target";
+    }
+
+
 }
