@@ -15,4 +15,5 @@ public interface AdminService {
     List<Admin> getAll();
 
     Admin getAdminById(Integer id);
+    Admin getAdminByLoginAcct(String loginAcct, String userPswd);
 }
